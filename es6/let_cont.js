@@ -58,8 +58,27 @@ console.log(ff);
 
 
 
+/*
+* const 命令
+*/
 
+// 彻底冻结对象
 
+const constObj = {
+  name: 'runzhi',
+  company: 'ant service'
+}
+
+let constantize = (obj) => {
+  Object.freeze(obj);
+  Object.keys(obj).forEach((key, value) => {
+    if (typeof obj[key] === 'object') {
+      constantize( obj[key] );
+    }
+  });
+}
+constObj.name = 'ronglin';
+console.log(constObj.name);
 
 
 
