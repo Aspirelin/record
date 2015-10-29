@@ -29,7 +29,7 @@ cd: no such file or directory: /System/Library/Java/JavaVirtualMachines/1.6.0.jd
 `现在确定原因了，因为之前java JDK，是安装在System，目录下，系统更新是，应该是将原System文件下，内容删除更新了，好吧，那就从新安装一遍`
 
 
-##### MAC下Java JDK安装
+##### MAC下Java JDK安装&JAVA_HOME配置
 Oracle在java jkd 1.7版本后才提供Mac OS的安装版本，但是有时候我们需要安装Java 1.6 这个时候，我们需要安装javaforosx，下周链接见苹果[Java for OS X 2015-001](https://support.apple.com/kb/DL1572?viewlocale=en_US&locale=en_US)下在地址。
 
 *   下载 Java for os x 2015-001并安装后，发现，苹果官网，最新提供的java JDK安装在`/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home`目录下，而不是目录`/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home` 
